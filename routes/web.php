@@ -18,3 +18,5 @@ Route::view('/', 'welcome');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('blogs', \App\Http\Controllers\BlogController::class);
